@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aWGfen5GciOiQL5/t65OlGzfwnok3vu2Jdb10N4TdLJm6ZRJ/Pgt/0WEJh+DmWAX1s0fIhgtWzHBB0CBXc7WhA==",
+  "dgSpecHash": "YyQdsAe+T62pqQoY0nbLcb/34MN49x8qTSA24TO/v1cXmAqjukoPQhn+h+SxBbv1vnAVAzGdA7GdWpMdpDzKmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hirzo\\Desktop\\Sudoku\\Sudoku_\\Sudoku_.csproj",
+  "projectFilePath": "C:\\Git\\ALGODAT\\ALGODAT_Sudoku-Nunit_\\Sudoku_with_Nunit\\Sudoku_\\Sudoku_.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\hirzo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\hirzo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+    "C:\\Users\\hirzi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
   ],
   "logs": []
 }
