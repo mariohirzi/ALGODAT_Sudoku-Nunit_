@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\hirzo\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\hirzo\\.nuget\\packages"
+    ]
+  }
+}
