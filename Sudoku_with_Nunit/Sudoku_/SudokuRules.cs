@@ -18,6 +18,12 @@ namespace Sudoku_
             return false;
         }
 
+        /// <summary>
+        /// Method to check whether the the nuber is used in a row or column.
+        /// </summary>
+        /// <param name="sudokuClassic"></param>
+        /// <param name="sudokuField"></param>
+        /// <returns>Boolean</returns>
         private bool CheckRowsAndColumns(SudokuClassic sudokuClassic, SudokuField sudokuField)
         {
             foreach (var element in sudokuClassic.SudokuFields)
@@ -36,6 +42,12 @@ namespace Sudoku_
             return true;
         }
 
+        /// <summary>
+        /// Checks whether the number is not twice in the 3 x 3 field.
+        /// </summary>
+        /// <param name="sudokuClassic"></param>
+        /// <param name="sudokuField"></param>
+        /// <returns></returns>
         private bool Check3x3Field(SudokuClassic sudokuClassic, SudokuField sudokuField)
         {
             foreach (var element in sudokuClassic.SudokuFields)

@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\hirzi\\.nuget\\packages\\": {}
+    "C:\\Users\\hirzo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\ALGODAT\\ALGODAT_Sudoku-Nunit_\\Sudoku_with_Nunit\\Sudoku_\\Sudoku_.csproj",
+      "projectUniqueName": "C:\\Users\\hirzo\\Documents\\GitHub\\ALGODAT_Sudoku-Nunit_\\Sudoku_with_Nunit\\Sudoku_\\Sudoku_.csproj",
       "projectName": "Sudoku_",
-      "projectPath": "C:\\Git\\ALGODAT\\ALGODAT_Sudoku-Nunit_\\Sudoku_with_Nunit\\Sudoku_\\Sudoku_.csproj",
-      "packagesPath": "C:\\Users\\hirzi\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\ALGODAT\\ALGODAT_Sudoku-Nunit_\\Sudoku_with_Nunit\\Sudoku_\\obj\\",
+      "projectPath": "C:\\Users\\hirzo\\Documents\\GitHub\\ALGODAT_Sudoku-Nunit_\\Sudoku_with_Nunit\\Sudoku_\\Sudoku_.csproj",
+      "packagesPath": "C:\\Users\\hirzo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hirzo\\Documents\\GitHub\\ALGODAT_Sudoku-Nunit_\\Sudoku_with_Nunit\\Sudoku_\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hirzi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hirzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

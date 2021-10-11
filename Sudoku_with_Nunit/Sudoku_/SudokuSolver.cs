@@ -16,50 +16,54 @@ namespace Sudoku_
 
         private SudokuRules sudokuRules;
 
+        /// <summary>
+        /// Method to solve the classic Sudoku.
+        /// </summary>
+        /// <param name="sudokuClassic"></param>
+        /// <returns></returns>
         public bool Visit(SudokuClassic sudokuClassic)
         {
-            Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
-
-
-
             bool backstep = false;
 
             for (int i = 0; i < sudokuClassic.SudokuFields.Count; i++)
             {
+                // Checks if the sudoku is solvable.
+                if (i == -1)
+                {
+                    return false;
+                }
 
+                // Checks if this field is changeable.
                 if (!sudokuClassic.SudokuFields[i].GivenNumber)
                 {
                     do
                     {
+                        // Checks if the number is 9.
+                        // If true, the number is set to 0 and the backspace process is initiated.
                         if (sudokuClassic.SudokuFields[i].Number == 9)
                         {
-                            if (i == 2)
-                            {
-                                throw new Exception();
-                            }
+
                             sudokuClassic.SudokuFields[i].Number = 0;
                             i-=2;
                             backstep = true;
                             break;
                         }
+
                         sudokuClassic.SudokuFields[i].Number++;
                         backstep = false;
+
+                        // Checks whether the rules are followed.
                     } while (!this.sudokuRules.CheckRules(sudokuClassic, sudokuClassic.SudokuFields[i]));
                 }
                 else
                 {
+                    // Part of the backstep process.
                     if (backstep)
                     {
                         i -= 2;
                     }
                 }
             }
-
-            stopwatch.Stop();
-
-            var stopTime = stopwatch.ElapsedMilliseconds;
-            Console.WriteLine(stopTime);
 
             return true;
         }

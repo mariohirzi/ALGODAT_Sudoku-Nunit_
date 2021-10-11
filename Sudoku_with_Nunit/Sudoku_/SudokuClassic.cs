@@ -11,6 +11,8 @@ namespace Sudoku_
         {
         }
 
+
+
         /// <summary>
         /// The accept method.
         /// </summary>
@@ -21,5 +23,6 @@ namespace Sudoku_
         {
             return visitor.Visit(this);
         }
+
     }
 }

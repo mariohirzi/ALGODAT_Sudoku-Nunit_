@@ -20,12 +20,15 @@ namespace Sudoku_
             List<SudokuField> sudokuFields = this.InputPreparationNumberLine(input);
             this.sudokuType = new SudokuClassic(sudokuFields);
             this.sudokuSolver = new SudokuSolver();
-
+            
+            // Sudoku solve process.
             if (!this.sudokuType.Accept(sudokuSolver))
             {
-                return null;
+                this.sudokuType.Solvable = false;
+                return sudokuType;
             }
 
+            this.sudokuType.Solvable = true;
             return this.sudokuType;
         }
 

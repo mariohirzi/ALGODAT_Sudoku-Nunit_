@@ -12,6 +12,12 @@ namespace Sudoku_
             this.SudokuFields = sudokuFields;
         }
 
+        public bool Solvable
+        {
+            get;
+            set;
+        }
+
         public List<SudokuField> SudokuFields
         {
             get;
