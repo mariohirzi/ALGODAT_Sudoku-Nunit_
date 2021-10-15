@@ -57,9 +57,11 @@ namespace Sudoku_
                     continue;
                 }
 
+                // Compares whether a field is in the current field´s 3x3 zone.
                 if ((Math.Ceiling(Convert.ToDouble(element.Positions.X / 3)) == Math.Ceiling(Convert.ToDouble(sudokuField.Positions.X / 3))) &&
                     (Math.Ceiling(Convert.ToDouble(element.Positions.Y / 3)) == Math.Ceiling(Convert.ToDouble(sudokuField.Positions.Y / 3))))
                 {
+                    // Returns false if the number is in the 3x3 zone.
                     if (element.Number == sudokuField.Number)
                     {
                         return false;
