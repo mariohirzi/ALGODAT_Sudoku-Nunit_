@@ -15,7 +15,7 @@ namespace Sudoku_
 
 
 
-            if (!(FinishedSudoku.Solvable))
+            if ((FinishedSudoku.Solvable))
             {
                 drawer.WriteSudoku(FinishedSudoku.SudokuFields);
             }

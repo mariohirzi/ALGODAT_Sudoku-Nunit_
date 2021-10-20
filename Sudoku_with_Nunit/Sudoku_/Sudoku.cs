@@ -20,7 +20,13 @@ namespace Sudoku_
             List<SudokuField> sudokuFields = this.InputPreparationNumberLine(input);
             this.sudokuType = new SudokuClassic(sudokuFields);
             this.sudokuSolver = new SudokuSolver();
-            
+
+            if (!this.CheckInput(sudokuType))
+            {
+                this.sudokuType.Solvable = false;
+                return sudokuType;
+            }
+
             // Sudoku solve process.
             if (!this.sudokuType.Accept(sudokuSolver))
             {
@@ -32,7 +38,17 @@ namespace Sudoku_
             return this.sudokuType;
         }
 
-        public List<SudokuField> InputPreparationNumberLine(string input)
+        private bool CheckInput(SudokuAbstract sudoku)
+        {
+            if (sudoku.SudokuFields.Count != 81)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        private List<SudokuField> InputPreparationNumberLine(string input)
         {
             List<SudokuField> sudokuFields = new List<SudokuField>();
 
@@ -69,7 +85,7 @@ namespace Sudoku_
 
 
 
-        public List<SudokuField> InputPreparationLine(string[] input)
+        private List<SudokuField> InputPreparationLine(string[] input)
         {
             List<SudokuField> sudokuFields = new List<SudokuField>();
 
@@ -104,7 +120,7 @@ namespace Sudoku_
             return sudokuFields;
         }
 
-        public List<SudokuField> InputPreparation9x9Form(string[] input)
+        private List<SudokuField> InputPreparation9x9Form(string[] input)
         {
             List<SudokuField> sudokuFields = new List<SudokuField>();
 
